@@ -1,0 +1,13 @@
+{
+    "baseUrl": "https://www.saucedemo.com",
+    "chromeWebSecurity": false,
+    "failOnStatusCode": false,
+    "env": {
+        "SESSION_COOKIE_NAME": "session-username",
+        "STANDARD_USER_USERNAME": "standard_user",
+        "STANDARD_USER_PASSWORD": "secret_sauce",
+        "URL_CHECKOUT_STEP_TWO": "/checkout-step-two.html",
+        "URL_CHECKOUT_COMPLETE": "/checkout-complete.html",
+        "URL_CART":"/cart.html"
+    }
+}

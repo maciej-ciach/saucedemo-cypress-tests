@@ -1,0 +1,20 @@
+{
+  "name": "sauce-demo-tests",
+  "version": "1.0.0",
+  "description": "E2E Tests in Cypress for saucedemo.com",
+  "main": "index.js",
+  "scripts": {
+    "tests": "cypress run",
+    "eslint": "eslint cypress/integration/**/*.ts",
+    "cypress:open": "cypress open"
+  },
+  "author": "Maciej Ciach",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cypress": "^8.4.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "typescript": "^4.4.3"
+  }
+}
