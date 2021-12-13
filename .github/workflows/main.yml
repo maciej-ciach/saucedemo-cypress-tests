@@ -6,7 +6,7 @@ jobs:
   cypress-run:
     strategy:
       matrix:
-        node: [10, 12, 14]
+        node: [10]
     runs-on: ubuntu-latest
     container: cypress/included:8.4.0
     steps:
@@ -20,3 +20,5 @@ jobs:
         with:
           # Specify Browser since container image is compile with Firefox
           browser: chrome
+          start: npm start
+          command-prefix: "sed -i -e 's|api_url:.*$|api_url: \"https://sorry-cypress-demo-director.herokuapp.com/\"|g' /*/.cache/Cypress/*/Cypress/resources/app/packages/server/config/app.yml"
