@@ -41,7 +41,7 @@ describe('Order process', () => {
                 cy.url().should('contain', Cypress.config().baseUrl + Cypress.env('URL_CHECKOUT_COMPLETE'));
 
                 checkoutCompletePage = new CheckoutCompletePage();
-                checkoutCompletePage.completeHeader().should('have.text', 'THANK YOU FOR YOUR ORDER');
+                checkoutCompletePage.completeHeader().should('have.text', 'THANK ME FOR MY ORDER');
             });
 
         })
